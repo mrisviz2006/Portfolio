@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="normalMenu">
+            <ol><a href="#about">About</a></ol>
+            <ol><a href="#portfolio">Portfolio</a></ol>
+            <ol><a href="#contacts">Contacts</a></ol>
+            <ol><a href="#home">Home</a></ol>
+        </nav>
+        <div class="hamburger">
+            <div class="burgerNavigation">
+                <div>
+                    <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                        <svg width="70" height="70" viewBox="0 0 100 100">
+                            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </button>
+                    <div class="mobileMenu">
+                        <ol><a href="#about">About me</a></ol>
+                        <ol><a href="#portfolio">Portfolio</a></ol>
+                        <ol><a href="#contacts">Contacts</a></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <h1>Max, study Front-end developer</h1>
+    </section>
+    <section id="about">
+        <div class="photo">
+            <img class="myPhoto1" src="image/image.jpg" alt="Me">
+            <img class="myPhoto2" src="image/images.jpg" alt="Me">
+        </div>
+        <div class="description">
+            <h2>About Me</h2>
+            <p>Hi, I'm Max Doe. I'm learning front-end developer for 1 month</p>
+            <p><b>Skills: C#, JavaScript, html, java</b></p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <div class="project1">
+                <img src="image/project1.png" alt="First project">
+                <p>Flashcards</p>
+                <button id="open-window1" class="open-window">View</button>
+            </div>
+            <div class="project2">
+                <img src="image/project2.png" alt="Second project">
+                <p>Virtual Piano</p>
+                <button id="open-window2" class="open-window">View</button>
+            </div>
+        </div>
+        <div class="window">
+            <div id="window1" class="info">
+                <h1>Flashcards</h1>
+                <p>You can see the project at the following link <a href="https://github.com/mrisviz2006/Flashcards">flashcards</a></p>
+                <p>I did this project when I was studying the frontend on HyperSkill. I created a web page with flip-down flash cards, learned some HTML basic and learned that CSS can easily make a beautiful design</p>
+            </div>
+            <div id="window2" class="info">
+                <h1>Virtual Piano</h1>
+                <p>You can see the project at the following link <a href="https://github.com/mrisviz2006/VirtualPiano">virtual piano</a></p>
+                <p>I did this project when I was studying the frontend on HyperSkill. I created a web page with flip-down flash cards, learned some HTML basic and learned that CSS can easily make a beautiful design</p>
+            </div>
+            <button id="closeButton">Close</button>
+        </div>
+    </section>
+    <section id="contacts">
+        <h2>Contacts</h2>
+        <p>You can contact me at <a href="mailto:test@partfolio.ru">test@partfolio.ru</a></p>
+        <p>or phone number <a href="tel:+799999999">+799999999</a></p>
+        <img src="image/facebook.svg" alt="facebook">
+        <img src="image/twitter.svg" alt="twitter">
+        <img src="image/github.svg" alt="github">
+        <img src="image/instagram%201.svg" alt="instagram">
+    </section>
+    <footer>
+        <p>MAX DOE</p>
+        <p>2021</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&display=swap');
+
+body{
+    margin:0;
+    display: grid;
+}
+
+header{
+    background: #210101;
+    height: auto;
+    width: 1920px;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+nav ol{
+    text-align: center;
+    margin-right: 15px;
+    height: 40px;
+    width: 100px;
+}
+
+nav a {
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+    justify-content: right;
+    width: 1920px;
+    position: relative;
+}
+
+.burgerNavigation{
+    background: grey;
+    z-index: 1;
+
+}
+
+.burgerNavigation a{
+    text-decoration: none;
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    color: white;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+.line {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+#home {
+    display: flex;
+    background: 100% no-repeat url("../image/bg.jpg");
+    color: white;
+    height: 1080px;
+    width: 1920px;
+}
+
+#home h1{
+    font-family: 'Bitter', serif;
+    font-size: 50px;
+    margin-top: 40%;
+    margin-left: 60px;
+}
+
+#about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #cbd0d3;
+    height: 900px;
+    width: 1920px;
+}
+
+.description {
+    text-align: left;
+    margin-top: 19rem;
+}
+
+.description h2{
+    font-family: 'Bitter', serif;
+    font-size: 25px;
+}
+
+.description p{
+    font-family: 'Bitter', serif;
+    font-size: 18px;
+}
+
+
+#about img {
+    position: absolute;
+}
+
+.myPhoto1{
+    height: 400px;
+    width: 600px;
+    margin-top: 15rem;
+    margin-left: 7rem;
+}
+
+.myPhoto2{
+    height: 380px;
+    z-index: 2;
+    margin-top: 19rem;
+    margin-left: 26rem;
+}
+
+#portfolio{
+    height: 920px;
+    width: 1920px;
+    text-align: center;
+    background: #cbd0d3;
+}
+
+.project {
+    display: flex;
+    margin-left: 35px;
+}
+
+.project1 img {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 600px;
+}
+
+.project2 img{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 600px;
+}
+
+.project p{
+    font-family: 'Bitter', serif;
+    font-size: 35px;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+}
+
+#portfolio h2{
+    font-family: 'Bitter', serif;
+    font-size: 35px;
+}
+
+#contacts{
+    width: 1920px;
+    text-align: center;
+    font-family: 'Bitter', serif;
+    line-height: 10px;
+}
+
+#contacts h2{
+    font-size: 35px;
+}
+
+#contacts img{
+    margin: 15px 10px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Pushster', cursive;
+    font-size: 25px;
+    color: #cbd0d3;
+    background: #250000;
+    width: 1920px;
+}
+
+.open-window{
+    height: 40px;
+    width: 100px;
+}
+
+.window {
+    display: none;
+    height : 230px;
+    width : 600px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color : white;
+    z-index: 1;
+    margin-bottom : 300px;
+    position : relative;
+    text-align: center;
+    margin-top: -500px;
+    margin-left: 650px;
+}
+
+.window p{
+    margin: 10px 10px;
+}
+
+.window button{
+    height: 40px;
+    width: 100px;
+    margin: 10px 10px;
+    background-color: black;
+    color: white;
+}
+
+.info{
+    display: none;
+}
